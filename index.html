@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Экскурсии по Дании на русском языке с гидом Владиславом Адамовичем. Копенгаген, замки, уютные города — индивидуальные и групповые туры." />
+    <title>Экскурсии по Дании — Владислав Адамович</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#" class="logo">
+          <span class="logo__flag" aria-hidden="true"></span>
+          <span class="logo__text">Экскурсии по Дании</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a href="#routes" class="nav__link">Маршруты</a></li>
+            <li><a href="#about" class="nav__link">О гиде</a></li>
+            <li><a href="#how-to-order" class="nav__link">Как заказать</a></li>
+            <li><a href="#contacts" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Включить тёмную тему">
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round" />
+          </svg>
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true">
+            <path
+              d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Экскурсии по Дании на русском языке</h1>
+            <p class="hero__subtitle">Откройте Копенгаген, замки и уютные города Дании с русскоязычным гидом</p>
+            <p class="hero__guide">Владислав Адамович</p>
+            <div class="hero__actions">
+              <a href="#contacts" class="btn btn--primary btn--lg">Заказать экскурсию</a>
+              <a
+                href="https://t.me/+4526798297"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--outline btn--lg"
+                >Написать в Telegram</a
+              >
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="hero__image-wrap">
+              <img
+                src="assets/city/titular.jpeg"
+                alt="Копенгаген — вид на город и каналы"
+                class="hero__image"
+                loading="eager" />
+              <div class="hero__image-accent" aria-hidden="true"></div>
+            </div>
+            <div class="danish-flag danish-flag--decorative" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Routes -->
+      <section class="section routes" id="routes">
+        <div class="container">
+          <h2 class="section__title section__title--center">Маршруты</h2>
+          <p class="section__lead">Выберите готовый маршрут или обсудите индивидуальную программу с гидом</p>
+
+          <div class="routes-grid">
+            <article class="route-card">
+              <div class="route-card__image-wrap">
+                <img src="assets/route/1.jpeg" alt="Копенгаген" class="route-card__image" loading="lazy" />
+              </div>
+              <div class="route-card__body">
+                <h3 class="route-card__title">🏛️ Копенгаген</h3>
+                <div class="route-card__meta">
+                  <span class="route-card__tag">4 часа</span>
+                  <span class="route-card__tag">Самая популярная экскурсия</span>
+                </div>
+                <p class="route-card__text">
+                  Прогулка по главным достопримечательностям, красивым улицам и атмосферным местам центра Копенгагена.
+                </p>
+                <a href="#contacts" class="route-card__link">Заказать этот маршрут →</a>
+              </div>
+            </article>
+
+            <article class="route-card">
+              <div class="route-card__image-wrap">
+                <img
+                  src="assets/route/2.jpeg"
+                  alt="Розенборг"
+                  class="route-card__image route-card__image--top"
+                  loading="lazy" />
+              </div>
+              <div class="route-card__body">
+                <h3 class="route-card__title">👑 Розенборг</h3>
+                <div class="route-card__meta">
+                  <span class="route-card__tag">Королевский замок</span>
+                  <span class="route-card__tag">Живописные виды</span>
+                </div>
+                <p class="route-card__text">
+                  Поездка в один из самых красивых замков Дании с историей королевской семьи и живописными видами.
+                </p>
+                <a href="#contacts" class="route-card__link">Заказать этот маршрут →</a>
+              </div>
+            </article>
+
+            <article class="route-card">
+              <div class="route-card__image-wrap">
+                <img
+                  src="assets/route/3.jpeg"
+                  alt="Замок Гамлета — Кронборг"
+                  class="route-card__image"
+                  loading="lazy" />
+              </div>
+              <div class="route-card__body">
+                <h3 class="route-card__title">⚔️ Замок Гамлета + Швеция</h3>
+                <div class="route-card__meta">
+                  <span class="route-card__tag">Замок Кронборг</span>
+                  <span class="route-card__tag">Паром в Швецию</span>
+                </div>
+                <p class="route-card__text">
+                  Поездка к замку Кронборг, связанному с историей Гамлета, и необычное путешествие в Швецию на пароме с
+                  красивыми видами на пролив.
+                </p>
+                <a href="#contacts" class="route-card__link">Заказать этот маршрут →</a>
+              </div>
+            </article>
+
+            <article class="route-card">
+              <div class="route-card__image-wrap">
+                <img src="assets/route/4.jpeg" alt="Драгор" class="route-card__image" loading="lazy" />
+              </div>
+              <div class="route-card__body">
+                <h3 class="route-card__title">⚓ Драгор</h3>
+                <div class="route-card__meta">
+                  <span class="route-card__tag">Старинный город</span>
+                  <span class="route-card__tag">У моря</span>
+                </div>
+                <p class="route-card__text">
+                  Поездка в уютный старинный город с атмосферными улочками, морем и датским колоритом.
+                </p>
+                <a href="#contacts" class="route-card__link">Заказать этот маршрут →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About guide -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about__grid">
+            <div class="about__photo-wrap">
+              <div class="about-slider" id="about-slider" aria-roledescription="carousel" aria-label="Фото гида">
+                <div class="about-slider__slides"></div>
+                <button type="button" class="about-slider__btn about-slider__btn--prev" aria-label="Предыдущее фото">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M15 6l-6 6 6 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button type="button" class="about-slider__btn about-slider__btn--next" aria-label="Следующее фото">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M9 6l6 6-6 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="about__content">
+              <h2 class="section__title">Ваш гид по Дании — Владислав Адамович</h2>
+              <p class="about__text">Меня зовут Владислав Адамович, и я провожу экскурсии по Дании на русском языке.</p>
+              <p class="about__text">
+                Я родом из Одессы, живу и работаю в Дании с 2002 года. Увлекаюсь историей и с удовольствием делюсь
+                своими знаниями о стране, её традициях и интересных местах.
+              </p>
+              <p class="about__text">
+                Дания — это не только известные достопримечательности, замки и старинные улицы. Это страна со своей
+                особой атмосферой, традициями и образом жизни, которые не всегда заметны обычному туристу.
+              </p>
+              <p class="about__text">
+                Во время экскурсий я рассказываю не только об истории и архитектуре, но и о современной жизни датчан,
+                интересных фактах, местных особенностях и культурных традициях. Моя задача — помочь гостям увидеть Данию
+                живой, настоящей и запоминающейся.
+              </p>
+              <p class="about__text">
+                Экскурсии проходят в комфортном темпе, в дружелюбной атмосфере и подходят как для тех, кто впервые
+                знакомится с Данией, так и для путешественников, желающих узнать страну глубже.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <div class="pricing__box">
+            <h2 class="section__title">Стоимость экскурсии</h2>
+            <p class="pricing__text">
+              Цена обсуждается индивидуально и зависит от маршрута, количества участников, продолжительности экскурсии и
+              формата поездки.
+            </p>
+            <a href="#contacts" class="btn btn--primary btn--lg">Уточнить стоимость</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour gallery -->
+      <section class="section tour-gallery" id="tour-gallery">
+        <div class="container">
+          <h2 class="section__title section__title--center">Фото с экскурсий</h2>
+          <div
+            class="tour-gallery__slider"
+            id="tour-gallery-slider"
+            aria-roledescription="carousel"
+            aria-label="Фото с экскурсий">
+            <div class="tour-gallery__slides"></div>
+            <button type="button" class="tour-gallery__btn tour-gallery__btn--prev" aria-label="Предыдущее фото">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M15 6l-6 6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="tour-gallery__btn tour-gallery__btn--next" aria-label="Следующее фото">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M9 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to order -->
+      <section class="section how-to-order" id="how-to-order">
+        <div class="container">
+          <h2 class="section__title section__title--center">Как заказать экскурсию</h2>
+          <ol class="steps">
+            <li class="step">
+              <div class="step__number">1</div>
+              <div class="step__content">
+                <h3 class="step__title">Свяжитесь с гидом</h3>
+                <p class="step__text">Напишите Владиславу в мессенджер, по телефону или на email</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__number">2</div>
+              <div class="step__content">
+                <h3 class="step__title">Обсудите детали</h3>
+                <p class="step__text">Согласуйте дату, город, маршрут и формат экскурсии</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__number">3</div>
+              <div class="step__content">
+                <h3 class="step__title">Наслаждайтесь прогулкой</h3>
+                <p class="step__text">Встретьтесь с гидом и откройте для себя Данию</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section class="section contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__grid">
+            <div class="contacts__info">
+              <h2 class="section__title">Связаться с гидом</h2>
+              <div class="contacts__avatar">
+                <img src="assets/contacts/1.jpg" alt="Владислав Адамович" class="contacts__avatar-img" loading="lazy" />
+              </div>
+              <p class="contacts__name">Владислав Адамович</p>
+              <ul class="contacts__list">
+                <li>
+                  <span class="contacts__label">Email</span>
+                  <a href="mailto:vlbezludov@gmail.com" class="contacts__value">vlbezludov@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contacts__label">Телефон</span>
+                  <a href="tel:+4526798297" class="contacts__value">+45 2679 8297</a>
+                </li>
+              </ul>
+              <p class="contacts__messengers-label">Мессенджеры</p>
+              <div class="contacts__messengers">
+                <a href="https://t.me/+4526798297" target="_blank" rel="noopener noreferrer" class="messenger-link"
+                  >Telegram</a
+                >
+                <a href="https://wa.me/4526798297" target="_blank" rel="noopener noreferrer" class="messenger-link"
+                  >WhatsApp</a
+                >
+                <span class="messenger-link messenger-link--stub" aria-disabled="true">IMO</span>
+                <a
+                  href="https://invite.viber.com/?number=4526798297"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="messenger-link"
+                  >Viber</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="logo__flag logo__flag--sm" aria-hidden="true"></span>
+          <span>Экскурсии по Дании</span>
+        </div>
+        <div class="footer__contacts">
+          <a href="mailto:vlbezludov@gmail.com">vlbezludov@gmail.com</a>
+          <span class="footer__sep">·</span>
+          <a href="tel:+4526798297">+45 2679 8297</a>
+        </div>
+        <p class="footer__copy">© 2026 Экскурсии по Дании. Владислав Адамович.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
