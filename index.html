@@ -57,6 +57,7 @@
           <ul class="nav__list">
             <li><a href="#routes" class="nav__link">Маршруты</a></li>
             <li><a href="#about" class="nav__link">О гиде</a></li>
+            <li><a href="#reviews" class="nav__link">Отзывы</a></li>
             <li><a href="#how-to-order" class="nav__link">Как заказать</a></li>
             <li><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
@@ -322,6 +323,78 @@
         </div>
       </section>
 
+      <!-- Reviews -->
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <h2 class="section__title section__title--center">Отзывы</h2>
+          <p class="section__lead">Впечатления гостей об экскурсиях — поделитесь и своим!</p>
+
+          <div class="reviews-grid" id="reviews-list" aria-live="polite"></div>
+          <p class="reviews__empty" id="reviews-empty" hidden>Пока нет отзывов — станьте первым!</p>
+          <p class="reviews__empty" id="reviews-status" hidden></p>
+
+          <div class="form-wrap reviews__form-wrap" id="review-form-wrap">
+            <h3 class="form-wrap__title">Оставить отзыв</h3>
+            <form id="review-form" novalidate>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="review-name">Ваше имя *</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="review-name"
+                    name="name"
+                    maxlength="60"
+                    required
+                    placeholder="Как вас зовут" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="review-route">Экскурсия</label>
+                  <select class="form__input form__select" id="review-route" name="route">
+                    <option value="">Не указано</option>
+                    <option>Копенгаген</option>
+                    <option>Розенборг</option>
+                    <option>Замок Гамлета + Швеция</option>
+                    <option>Драгор</option>
+                    <option>Индивидуальный маршрут</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__group">
+                <span class="form__label" id="rating-label">Оценка *</span>
+                <div class="rating" role="radiogroup" aria-labelledby="rating-label">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5" title="Отлично">★</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4" title="Хорошо">★</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3" title="Нормально">★</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2" title="Плохо">★</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1" title="Ужасно">★</label>
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="review-text">Отзыв *</label>
+                <textarea
+                  class="form__input form__textarea"
+                  id="review-text"
+                  name="text"
+                  maxlength="1000"
+                  required
+                  placeholder="Поделитесь впечатлениями об экскурсии (минимум 10 символов)"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg btn--full" id="review-submit">
+                Отправить отзыв
+              </button>
+              <p class="form__success" id="review-success" hidden>Спасибо! Ваш отзыв опубликован.</p>
+              <p class="form__error" id="review-error" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <!-- How to order -->
       <section class="section how-to-order" id="how-to-order">
         <div class="container">
@@ -412,5 +485,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="reviews.js"></script>
   </body>
 </html>

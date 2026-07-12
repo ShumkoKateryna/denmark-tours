@@ -890,6 +890,90 @@ button {
   color: var(--color-text-light);
 }
 
+.review-card__stars {
+  color: var(--color-red);
+  font-size: 1.05rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.review-card__stars .star--empty {
+  color: var(--color-border);
+}
+
+.reviews__empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.reviews__form-wrap {
+  max-width: 640px;
+  margin: 48px auto 0;
+}
+
+/* Star rating input */
+.rating {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: 4px;
+}
+
+.rating input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rating label {
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--color-border);
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+.rating label:hover {
+  transform: scale(1.15);
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: var(--color-red);
+}
+
+.rating input:focus-visible + label {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.form__error {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background-color: rgba(200, 16, 46, 0.08);
+  border: 1px solid rgba(200, 16, 46, 0.3);
+  border-radius: var(--radius-sm);
+  color: var(--color-red);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.form__error[hidden] {
+  display: none;
+}
+
+[data-theme='dark'] .form__success {
+  background-color: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #6ee7b7;
+}
+
 /* Pricing */
 .pricing {
   background-color: var(--color-bg-alt);
